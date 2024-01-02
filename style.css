@@ -1,0 +1,140 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 1366px;
+    height: 599px;
+    background: linear-gradient(to left bottom, red, blue, purple);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.charge {
+    width: 350px;
+    height: 450px;
+    backdrop-filter: brightness(0.5) blur(51px);
+    border-radius: 40px;
+    padding: 20px;
+    box-shadow: 0 0 20px 2px rgba(255, 255, 255, 0.568),
+        inset 0 0 20px 2px rgba(255, 255, 255, 0.493);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.status {
+    width: 300px;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.705);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-family: monospace;
+    color: rgba(255, 255, 255, 0.692);
+    margin-top: 40px;
+}
+
+h3 {
+    color: white;
+    font-family: monospace;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.enter {
+    width: 150px;
+    height: 40px;
+    margin-top: 30px;
+    background: linear-gradient(to right top, blue, purple, red);
+    border: none;
+    border-radius: 15px;
+    font-size: 18px;
+    color: white;
+    font-family: monospace;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.enter:active {
+    transform: translateY(-5%);
+}
+
+.hide {
+    display: none;
+}
+
+section {
+    width: 1366px;
+    height: 599px;
+    background: linear-gradient(to left top, red, purple, red);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 300px;
+    height: 350px;
+    backdrop-filter: brightness(0.5);
+    margin: 0 auto;
+    border-radius: 30px;
+    padding: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.circle {
+    width: 150px;
+    height: 150px;
+    background: url(./mom.jpg);
+    background-size: cover;
+    border-radius: 50%;
+    animation-name: circle1;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+}
+
+h2 {
+    font-size: 50px;
+    font-family: monospace;
+}
+
+.artist {
+    font-size: 18px;
+}
+
+.play {
+    width: 100px;
+    height: 60px;
+    font-size: 20px;
+    border-radius: 20px;
+    background-color: transparent;
+    margin-top: 10px;
+    color: white;
+    border: 2px solid white;
+    transition: 0.1s;
+    font-family: monospace;
+    cursor: pointer;
+}
+.play:active {
+    transform: scale(1.03);
+}
+
+@keyframes circle1 {
+    100%{
+        transform: rotate(360deg);
+    }
+}
